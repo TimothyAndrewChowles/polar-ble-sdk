@@ -24,9 +24,9 @@ let package = Package(
                 .product(name: "Zip", package: "Zip")
             ],
             path: "sources",
-            exclude: [],
-            resources: [
-                .copy("technical_documentation/PolarBleSdkTechnicalDocument.pdf")
+            exclude: [
+                "iOS/ios-communications/Tests",
+                "iOS/ios-communications/technical_documentation"
             ],
             swiftSettings: [
                 .define("POLAR_SDK"),
